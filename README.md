@@ -19,13 +19,13 @@ This package contains elements that I use in my apps. It includes things such as
 - [X] Light theme
 
 ## TODO
-- [] Dark Theme (Dark, Dimmed)
-- [] Custom Fonts
+- [ ] Dark Theme (Dark, Dimmed)
+- [ ] Custom Fonts
     - [X] Inter UI
-    - [] (Some kind of Serif font face)
-- [] Desktop Support
-    - [] Typography System
-- [] Reconfigure design system on figma to use new elements
+    - [ ] (Some kind of Serif font face)
+- [ ] Desktop Support
+    - [ ] Typography System
+- [ ] Reconfigure design system on figma to use new elements
 
 ## Dependencies
 - flutter_page_transition: 
