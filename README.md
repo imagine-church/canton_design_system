@@ -20,6 +20,12 @@ This package contains elements that I use in my apps. It includes things such as
 
 ## TODO
 - [ ] Dark Theme (Dark, Dimmed)
+- [ ] Rich text editor
+  - [ ] Bullet points
+  - [ ] Headings
+  - [ ] Justification
+  - [ ] Bold, Italicize, Underline, Strike through text
+  - [ ] Code
 - [ ] Custom Fonts
     - [X] Inter UI
     - [ ] (Some kind of Serif font face)
