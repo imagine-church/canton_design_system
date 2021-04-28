@@ -26,6 +26,7 @@ This package contains elements that I use in my apps. It includes things such as
   - [ ] Justification
   - [ ] Bold, Italicize, Underline, Strike through text
   - [ ] Code
+  - [ ] Links
 - [ ] Custom Fonts
     - [X] Inter UI
     - [ ] (Some kind of Serif font face)
