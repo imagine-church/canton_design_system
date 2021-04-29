@@ -1,4 +1,4 @@
-# canton_design_system
+# Canton Design System
 
 Canton Design System elements and resources.
 
