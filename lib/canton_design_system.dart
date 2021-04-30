@@ -20,7 +20,7 @@ export 'models/models.dart';
 // Src
 export 'src/styled_components/styled_components.dart';
 export 'src/methods.dart';
-export 'src/canton_item_picker/canton_item_picker.dart';
+export 'src/item_picker/item_picker.dart';
 
 // Icons
 export 'assets/icons/iconly_icon.dart';

@@ -1,15 +1,15 @@
 import 'package:canton_design_system/canton_design_system.dart';
-export 'canton_item_picker.dart';
+export 'item_picker.dart';
 export 'canton_item_box.dart';
-export 'canton_item_customizations.dart';
+export 'item_customizations.dart';
 
-class CantonItemPicker extends StatefulWidget {
+class ItemPicker extends StatefulWidget {
   final ValueChanged<Item> onItemChange;
   final List<Item> items;
   final Item selectedItem, initialItem;
   final bool symbolPicker, horizonantalList;
 
-  const CantonItemPicker({
+  const ItemPicker({
     Key key,
     this.onItemChange,
     this.selectedItem,
@@ -20,10 +20,10 @@ class CantonItemPicker extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CantonItemPickerState createState() => _CantonItemPickerState();
+  _ItemPickerState createState() => _ItemPickerState();
 }
 
-class _CantonItemPickerState extends State<CantonItemPicker> {
+class _ItemPickerState extends State<ItemPicker> {
   Item _selectedItem;
   int _selectedColor;
   String _selectedSymbol;
@@ -54,7 +54,7 @@ class _CantonItemPickerState extends State<CantonItemPicker> {
             new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5),
         itemBuilder: (_, index) {
           return widget.symbolPicker
-              ? CantonItemBox.symbols(
+              ? ItemBox.symbols(
                   item: widget.items[index],
                   isSelected: _selectedSymbol == widget.items[index].symbol,
                   onPressed: () {
@@ -64,7 +64,7 @@ class _CantonItemPickerState extends State<CantonItemPicker> {
                     });
                   },
                 )
-              : CantonItemBox(
+              : ItemBox(
                   item: widget.items[index],
                   isSelected: _selectedColor == widget.items[index].color,
                   onPressed: () {
@@ -88,7 +88,7 @@ class _CantonItemPickerState extends State<CantonItemPicker> {
           return SizedBox(width: 7);
         },
         itemBuilder: (_, index) {
-          return CantonItemBox(
+          return ItemBox(
             item: widget.items[index],
             isSelected: _selectedItem == widget.items[index],
             onPressed: () {

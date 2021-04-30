@@ -1,12 +1,12 @@
 import 'package:canton_design_system/canton_design_system.dart';
 import 'package:flutter/material.dart';
 
-class CantonItemBox extends StatefulWidget {
+class ItemBox extends StatefulWidget {
   final Item item;
   final bool isSelected, isUsingSymbols;
   final VoidCallback onPressed;
 
-  const CantonItemBox({
+  const ItemBox({
     Key key,
     @required this.item,
     this.isSelected,
@@ -14,7 +14,7 @@ class CantonItemBox extends StatefulWidget {
     this.onPressed,
   }) : super(key: key);
 
-  const CantonItemBox.symbols({
+  const ItemBox.symbols({
     Key key,
     @required this.item,
     this.isSelected,
@@ -22,7 +22,7 @@ class CantonItemBox extends StatefulWidget {
     this.onPressed,
   }) : super(key: key);
 
-  const CantonItemBox.nonSelectable({
+  const ItemBox.nonSelectable({
     Key key,
     @required this.item,
     this.isSelected = false,
@@ -31,10 +31,10 @@ class CantonItemBox extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CantonItemBoxState createState() => _CantonItemBoxState();
+  _ItemBoxState createState() => _ItemBoxState();
 }
 
-class _CantonItemBoxState extends State<CantonItemBox> {
+class _ItemBoxState extends State<ItemBox> {
   @override
   Widget build(BuildContext context) {
     bool _isSelected = widget.isSelected;
