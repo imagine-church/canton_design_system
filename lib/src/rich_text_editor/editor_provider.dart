@@ -36,9 +36,36 @@ class EditorProvider extends ChangeNotifier {
 
   void insert({int index, String text, SmartTextType type = SmartTextType.T}) {
     final TextEditingController controller =
-        TextEditingController(text: text ?? '');
+        TextEditingController(text: '\u200B' + (text ?? ''));
     controller.addListener(() {
-      // TODO
+      if (!controller.text.startsWith('\u200B')) {
+        final int index = _text.indexOf(controller);
+        if (index > 0) {
+          textAt(index - 1).text += controller.text;
+          textAt(index - 1).selection = TextSelection.fromPosition(TextPosition(
+              offset: textAt(index - 1).text.length - controller.text.length));
+          nodeAt(index - 1).requestFocus();
+          _text.removeAt(index);
+          _nodes.removeAt(index);
+          _types.removeAt(index);
+          notifyListeners();
+        }
+      }
+      if (controller.text.contains('\n')) {
+        final int index = _text.indexOf(controller);
+        List<String> _split = controller.text.split('\n');
+        controller.text = _split.first;
+        insert(
+            index: index + 1,
+            text: _split.last,
+            type: typeAt(index) == SmartTextType.BULLET
+                ? SmartTextType.BULLET
+                : SmartTextType.T);
+        textAt(index + 1).selection =
+            TextSelection.fromPosition(TextPosition(offset: 1));
+        nodeAt(index + 1).requestFocus();
+        notifyListeners();
+      }
     });
     _text.insert(index, controller);
     _types.insert(index, type);
