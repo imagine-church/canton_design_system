@@ -13,6 +13,8 @@ export 'package:flutter_svg/flutter_svg.dart';
 // Config
 export 'config/themes/light_theme/light_theme.dart';
 export 'config/themes/light_theme/light_color_palette.dart';
+export 'config/themes/text_themes/desktop_text_theme.dart';
+export 'config/themes/text_themes/mobile_text_theme.dart';
 
 // Models
 export 'models/models.dart';
@@ -21,6 +23,7 @@ export 'models/models.dart';
 export 'src/styled_components/styled_components.dart';
 export 'src/methods.dart';
 export 'src/item_picker/item_picker.dart';
+export 'src/rich_text_editor/rich_text_editor.dart';
 
 // Icons
 export 'assets/icons/iconly_icon.dart';
