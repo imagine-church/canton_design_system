@@ -1,6 +1,6 @@
 import 'package:canton_design_system/canton_design_system.dart';
 export 'item_picker.dart';
-export 'canton_item_box.dart';
+export '../item_picker/item_box.dart';
 export 'item_customizations.dart';
 
 class ItemPicker extends StatefulWidget {
