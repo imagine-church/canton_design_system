@@ -4,9 +4,6 @@ export 'buttons/action_button.dart';
 export 'buttons/back_button.dart';
 export 'buttons/header_button.dart';
 
-// Item Picker
-export 'canton_item_picker/canton_item_picker.dart';
-
 // Squicle Borders
 export 'squircle_borders/squircle_border.dart';
 export 'squircle_borders/squircle_input_border.dart';
