@@ -30,4 +30,3 @@ export 'assets/icons/iconly_icon.dart';
 export 'assets/icons/iconly_bold.dart';
 export 'assets/icons/iconly_line.dart';
 export 'assets/icons/iconly_curved.dart';
-
