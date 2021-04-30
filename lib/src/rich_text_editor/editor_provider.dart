@@ -1,4 +1,5 @@
 import 'package:canton_design_system/canton_design_system.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class EditorProvider extends ChangeNotifier {
   SmartTextType selectedType;
@@ -15,3 +16,7 @@ class EditorProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+final editorProvider = ChangeNotifierProvider<EditorProvider>((ref) {
+  return EditorProvider();
+});
