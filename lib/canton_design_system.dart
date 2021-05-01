@@ -23,7 +23,6 @@ export 'models/models.dart';
 export 'src/styled_components/styled_components.dart';
 export 'src/methods.dart';
 export 'src/item_picker/item_picker.dart';
-export 'src/rich_text_editor/rich_text_editor.dart';
 
 // Icons
 export 'assets/icons/iconly_icon.dart';
