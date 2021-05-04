@@ -8,8 +8,9 @@ class CantonBackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CantonPrimaryButton(
-      containerColor:
-          [null, false].contains(isClear) ? cantonGrey[200] : cantonInvisible,
+      containerColor: [null, false].contains(isClear)
+          ? CantonColors.gray[400]
+          : cantonInvisible,
       containerHeight: 60.0,
       containerWidth: 60.0,
       radius: 50,
@@ -21,11 +22,6 @@ class CantonBackButton extends StatelessWidget {
             : Theme.of(context).primaryColor,
         size: 27,
       ),
-      // Icon(
-      //   FeatherIcons.chevronLeft,
-      //   color: cantonGrey[100],
-      //   size: 27.0,
-      // ),
       alignment: [null, false].contains(isClear)
           ? MainAxisAlignment.center
           : MainAxisAlignment.start,
