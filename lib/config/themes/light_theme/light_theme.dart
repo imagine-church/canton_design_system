@@ -10,17 +10,16 @@ ThemeData cantonLightTheme() {
     dividerTheme: DividerThemeData(
       space: 0,
       thickness: 1,
-      color: cantonGrey[300],
+      color: CantonColors.borderPrimary,
     ),
-    iconTheme: const IconThemeData(
-      color: cantonGrey,
+    iconTheme: IconThemeData(
+      color: CantonColors.iconPrimary,
       size: 24.0,
     ),
     snackBarTheme: SnackBarThemeData(
-      backgroundColor: cantonGrey[300],
-      actionTextColor: cantonPrimary,
+      backgroundColor: CantonColors.bgPrimary,
       contentTextStyle: TextStyle(
-        color: cantonGrey[900],
+        color: CantonColors.textPrimary,
         fontWeight: FontWeight.w400,
         fontSize: 14.0,
         letterSpacing: 0.0,
@@ -32,101 +31,95 @@ ThemeData cantonLightTheme() {
       contentPadding: const EdgeInsets.all(23),
       filled: true,
       isCollapsed: true,
-      fillColor: cantonGrey[100],
-      hoverColor: cantonGrey[300],
+      fillColor: CantonColors.gray[300],
+      hoverColor: CantonColors.gray[400],
       enabledBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: cantonGrey[400],
+          color: CantonColors.borderPrimary,
           width: 1.5,
         ),
       ),
-      errorBorder: const SquircleInputBorder(
+      errorBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: cantonDanger,
+          color: CantonColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
-      focusedBorder: const SquircleInputBorder(
+      focusedBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: cantonPrimary,
           width: 1.5,
         ),
       ),
-      focusedErrorBorder: const SquircleInputBorder(
+      focusedErrorBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: cantonDanger,
+          color: CantonColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
-      helperStyle: const TextStyle(
+      helperStyle: TextStyle(
         fontSize: 15.0,
         fontWeight: FontWeight.w400,
-        color: cantonGrey,
+        color: CantonColors.textPrimary,
         height: 1.5,
       ),
       hintStyle: TextStyle(
         fontSize: 15.0,
         fontStyle: FontStyle.italic,
         fontWeight: FontWeight.w600,
-        color: cantonGrey[600],
+        color: CantonColors.textSecondary,
         height: 1.5,
       ),
-      labelStyle: const TextStyle(
+      labelStyle: TextStyle(
+        fontSize: 17.0,
+        fontWeight: FontWeight.w400,
+        color: CantonColors.textPrimary,
+        height: 1.5,
+      ),
+      prefixStyle: TextStyle(
         fontSize: 17.0,
         fontWeight: FontWeight.w400,
         color: cantonGrey,
         height: 1.5,
       ),
-      prefixStyle: const TextStyle(
+      suffixStyle: TextStyle(
         fontSize: 17.0,
         fontWeight: FontWeight.w400,
-        color: cantonGrey,
-        height: 1.5,
-      ),
-      suffixStyle: const TextStyle(
-        fontSize: 17.0,
-        fontWeight: FontWeight.w400,
-        color: cantonGrey,
+        color: CantonColors.textPrimary,
         height: 1.5,
       ),
     ),
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: 40,
-        side: BorderSide(width: 1.5, color: cantonGrey[200]),
+        side: BorderSide(width: 1.5, color: CantonColors.borderPrimary),
       ),
       elevation: 0.0,
-      color: cantonGrey[100],
+      color: CantonColors.bgPrimary,
     ),
     bottomSheetTheme: BottomSheetThemeData(
-      backgroundColor: cantonGrey[100],
-      modalBackgroundColor: cantonGrey[100],
+      backgroundColor: CantonColors.bgPrimary,
+      modalBackgroundColor: CantonColors.bgPrimary,
       modalElevation: 0.5,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(17),
       ),
     ),
     textSelectionTheme:
-        const TextSelectionThemeData(cursorColor: cantonPrimary),
+        const TextSelectionThemeData(cursorColor: CantonColors.blue),
     primaryColor: CantonColors.blue,
     errorColor: CantonColors.bgDangerInverse,
-    appBarTheme: const AppBarTheme(color: cantonInvisible, elevation: 0.0),
-    // indicatorColor: cantonPrimary,
-    // focusColor: cantonPrimary,
-    // hintColor: cantonGrey[600],
+    appBarTheme: const AppBarTheme(color: CantonColors.clear, elevation: 0.0),
     canvasColor: CantonColors.bgCanvas,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgPrimary,
-    // toggleableActiveColor: cantonPrimary,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: cantonInvisible,
+      backgroundColor: CantonColors.clear,
       elevation: 0.0,
-      // selectedItemColor: primaryColor,
       unselectedItemColor: CantonColors.iconTertiary,
     ),
   );
