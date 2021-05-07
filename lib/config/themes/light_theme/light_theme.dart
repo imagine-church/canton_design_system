@@ -95,7 +95,7 @@ ThemeData cantonLightTheme() {
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: 40,
-        side: BorderSide(width: 1.5, color: CantonColors.borderPrimary),
+        side: BorderSide(width: 1.5, color: CantonColors.gray[200]),
       ),
       elevation: 0.0,
       color: CantonColors.bgPrimary,
@@ -104,9 +104,7 @@ ThemeData cantonLightTheme() {
       backgroundColor: CantonColors.bgPrimary,
       modalBackgroundColor: CantonColors.bgPrimary,
       modalElevation: 0.5,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(17),
-      ),
+      shape: SquircleBorder(radius: 55),
     ),
     textSelectionTheme:
         const TextSelectionThemeData(cursorColor: CantonColors.blue),
