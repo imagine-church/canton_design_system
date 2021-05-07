@@ -9,7 +9,7 @@ class CantonBackButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CantonPrimaryButton(
       containerColor: [null, false].contains(isClear)
-          ? CantonColors.gray[400]
+          ? CantonColors.gray[300]
           : cantonInvisible,
       containerHeight: 60.0,
       containerWidth: 60.0,
