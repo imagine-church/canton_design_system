@@ -1,13 +1,9 @@
 import 'package:canton_design_system/canton_design_system.dart';
 import 'package:flutter/material.dart';
 
-final CDSColors = ColorScheme(
-  primary: CantonColors.blue,
-);
-
-/// Essentially it's the github/primer color palette that I'm creating here.
-/// It says CantonColors just to make it easier for me to reference however,
-/// all credit goes to the Primer Design System.
+/// Essentially it's the github/primer color palette with a few modifications
+/// that I'm creating here. It says CantonColors just to make it easier for me
+/// to reference however all credit goes to the Primer Design System.
 class CantonColors {
   /// Default colors
   static const MaterialColor gray = MaterialColor(
@@ -151,7 +147,7 @@ class CantonColors {
   /// Icon Colors
   static Color iconPrimary = gray;
   static Color iconSecondary = gray[700];
-  static Color iconTertiary = gray[500];
+  static Color iconTertiary = gray[600];
   static Color iconInfo = blue[600];
   static Color iconDanger = red[600];
   static Color iconSuccess = green[700];
@@ -160,7 +156,7 @@ class CantonColors {
   /// Border Colors
   static Color borderPrimary = gray[300];
   static Color borderSecondary = Color(0xFFeaecef);
-  static Color borderTertiary = gray[400];
+  static Color borderTertiary = gray[200];
   static Color borderOverlay = gray[300];
   static Color borderInverse = white;
   static Color borderInfo = blue[600];
