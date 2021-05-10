@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 ThemeData cantonLightTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
+    splashColor: CantonColors.transparent,
+    highlightColor: Colors.transparent,
     textTheme: MobileTextTheme.theme(base),
     dividerTheme: DividerThemeData(
       space: 0,
@@ -110,13 +112,14 @@ ThemeData cantonLightTheme() {
         const TextSelectionThemeData(cursorColor: CantonColors.blue),
     primaryColor: CantonColors.blue,
     errorColor: CantonColors.bgDangerInverse,
-    appBarTheme: const AppBarTheme(color: CantonColors.clear, elevation: 0.0),
+    appBarTheme:
+        const AppBarTheme(color: CantonColors.transparent, elevation: 0.0),
     canvasColor: CantonColors.bgCanvas,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgPrimary,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: CantonColors.clear,
+      backgroundColor: CantonColors.transparent,
       elevation: 0.0,
       unselectedItemColor: CantonColors.iconTertiary,
     ),
