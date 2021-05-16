@@ -15,11 +15,11 @@ This package contains elements that I use in my apps. It includes things such as
 - [X] Loading Icon
 - [X] Animations
 - [X] Custom Methods
-- [X] Icon System (Iconly Icons, Feather Icons)
+- [X] Icon System (Iconly Icons, Feather Icons, Cupertino Icons)
 - [X] Light theme
 
 ## TODO
-- [ ] Dark Theme (Dark, Dimmed)
+- [ ] Dark Theme (Dark, Black)
 - [ ] Custom Fonts
     - [X] Inter UI
     - [ ] (Some kind of Serif font face)
@@ -37,6 +37,7 @@ This package contains elements that I use in my apps. It includes things such as
 - emojis:
 - circular_check_box:
 - liquid_pull_to_refresh:
+- cupertino_icons:
 
 ## Figma
 [Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma
