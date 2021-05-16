@@ -22,7 +22,7 @@ class CantonActionButton extends StatelessWidget {
     return CantonPrimaryButton(
       prefixIcon: icon,
       radius: 0,
-      containerColor: cantonInvisible,
+      containerColor: CantonColors.transparent,
       alignment: MainAxisAlignment.center,
       containerWidth: containerWidth ?? 40,
       containerHeight: containerHeight ?? 40,

@@ -179,14 +179,14 @@ class CantonTextInput extends StatelessWidget {
                 ? OutlineInputBorder(
                     borderRadius: radius ?? BorderRadius.circular(17),
                     borderSide: BorderSide(
-                      color: enabledBorderColor ?? cantonInvisible,
+                      color: enabledBorderColor ?? CantonColors.transparent,
                       width: 1.5,
                     ),
                   )
                 : SquircleInputBorder(
                     radius: 45,
                     side: BorderSide(
-                      color: enabledBorderColor ?? cantonInvisible,
+                      color: enabledBorderColor ?? CantonColors.transparent,
                       width: 1.5,
                     ),
                   ),
@@ -209,14 +209,14 @@ class CantonTextInput extends StatelessWidget {
                 ? OutlineInputBorder(
                     borderRadius: radius ?? BorderRadius.circular(17),
                     borderSide: BorderSide(
-                      color: focusedBorderColor ?? cantonInvisible,
+                      color: focusedBorderColor ?? CantonColors.transparent,
                       width: 1.5,
                     ),
                   )
                 : SquircleInputBorder(
                     radius: 45,
                     side: BorderSide(
-                      color: focusedBorderColor ?? cantonInvisible,
+                      color: focusedBorderColor ?? CantonColors.transparent,
                       width: 1.5,
                     ),
                   ),
@@ -266,7 +266,7 @@ class CantonTextInput extends StatelessWidget {
               enabledBorder: SquircleInputBorder(
                 radius: 45,
                 side: BorderSide(
-                  color: enabledBorderColor ?? cantonInvisible,
+                  color: enabledBorderColor ?? CantonColors.transparent,
                   width: 1.5,
                 ),
               ),
@@ -280,7 +280,7 @@ class CantonTextInput extends StatelessWidget {
               focusedBorder: SquircleInputBorder(
                 radius: 45,
                 side: BorderSide(
-                  color: focusedBorderColor ?? cantonInvisible,
+                  color: focusedBorderColor ?? CantonColors.transparent,
                   width: 1.5,
                 ),
               ),

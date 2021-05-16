@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_page_transition: 
+  flutter_page_transition:
   flutter_riverpod:
   flutter_slidable:
   flutter_feather_icons:
@@ -19,6 +19,7 @@ dependencies:
   flutter_svg:
   emojis:
   circular_check_box:
+  cupertino_icons:
   liquid_pull_to_refresh:
   keyboard_visibility:
 
@@ -31,15 +32,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   uses-material-design: true
-
-
 
   # To add assets to your package, add an assets section, like this:
   assets:
     # Icons
-    
+
     # Bold
     - lib/assets/icons/svgs/bold/Activity.svg
     - lib/assets/icons/svgs/bold/AddUser.svg

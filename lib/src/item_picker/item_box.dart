@@ -59,7 +59,7 @@ class _ItemBoxState extends State<ItemBox> {
                 : cantonGrey[200]
             : isBoxTwo()
                 ? cantonGrey[200]
-                : cantonInvisible,
+                : CantonColors.transparent,
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Container(

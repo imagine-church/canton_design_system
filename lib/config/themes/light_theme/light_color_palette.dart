@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 /// Essentially it's the github/primer color palette with a few modifications
 /// that I'm creating here. It says CantonColors just to make it easier for me
 /// to reference however all credit goes to the Primer Design System.
+
 class CantonColors {
-  /// Default colors
   static const MaterialColor gray = MaterialColor(
     0xFF24292e,
     <int, Color>{
@@ -166,6 +166,7 @@ class CantonColors {
 
   /// Background Colors
   static Color bgCanvas = white;
+  static Color bgCanvasMobile = white;
   static Color bgInverse = gray;
   static Color bgInset = gray[200];
   static Color bgPrimary = white;
@@ -181,8 +182,23 @@ class CantonColors {
   static Color bgSuccessInverse = green[600];
   static Color bgWarning = Color(0xFFfff5b1);
   static Color bgWarningInverse = yellow[500];
+
+  static var colorScheme = ColorScheme.light(
+    /// My favorite color :)
+    primary: blue,
+    primaryVariant: blue[800],
+    background: bgPrimary,
+    surface: bgCanvas,
+    error: red[700],
+    onPrimary: white,
+    onSecondary: black,
+    onBackground: black,
+    onSurface: gray[300],
+    onError: white,
+  );
 }
 
+/// Old color theme, soon to be deleted.
 const MaterialColor cantonPrimary = MaterialColor(
   0xFF1C54FF,
   <int, Color>{
@@ -407,5 +423,3 @@ const MaterialColor cantonPink = MaterialColor(
     900: Color(0xFF7A1873),
   },
 );
-
-const Color cantonInvisible = Color(0x00000000);

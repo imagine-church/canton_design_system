@@ -3,25 +3,25 @@ import 'package:canton_design_system/config/themes/light_theme/light_color_palet
 import 'package:canton_design_system/config/themes/text_themes/mobile_text_theme.dart';
 import 'package:flutter/material.dart';
 
-ThemeData cantonLightTheme() {
-  final ThemeData base = ThemeData.light();
+ThemeData cantonDarkTheme() {
+  final ThemeData base = ThemeData.dark();
   return base.copyWith(
-    splashColor: CantonColors.transparent,
+    splashColor: CantonDarkColors.transparent,
     highlightColor: Colors.transparent,
     textTheme: MobileTextTheme.theme(base),
     dividerTheme: DividerThemeData(
       space: 0,
       thickness: 1,
-      color: CantonColors.borderPrimary,
+      color: CantonDarkColors.borderPrimary,
     ),
     iconTheme: IconThemeData(
-      color: CantonColors.iconPrimary,
+      color: CantonDarkColors.iconPrimary,
       size: 24.0,
     ),
     snackBarTheme: SnackBarThemeData(
-      backgroundColor: CantonColors.bgPrimary,
+      backgroundColor: CantonDarkColors.bgPrimary,
       contentTextStyle: TextStyle(
-        color: CantonColors.textPrimary,
+        color: CantonDarkColors.textPrimary,
         fontWeight: FontWeight.w400,
         fontSize: 14.0,
         letterSpacing: 0.0,
@@ -33,19 +33,19 @@ ThemeData cantonLightTheme() {
       contentPadding: const EdgeInsets.all(23),
       filled: true,
       isCollapsed: true,
-      fillColor: CantonColors.gray[300],
-      hoverColor: CantonColors.gray[400],
+      fillColor: CantonDarkColors.gray[300],
+      hoverColor: CantonDarkColors.gray[400],
       enabledBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: CantonColors.borderPrimary,
+          color: CantonDarkColors.borderPrimary,
           width: 1.5,
         ),
       ),
       errorBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: CantonColors.bgDangerInverse,
+          color: CantonDarkColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
@@ -58,27 +58,27 @@ ThemeData cantonLightTheme() {
       focusedErrorBorder: SquircleInputBorder(
         radius: 45,
         side: BorderSide(
-          color: CantonColors.bgDangerInverse,
+          color: CantonDarkColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
       helperStyle: TextStyle(
         fontSize: 15.0,
         fontWeight: FontWeight.w400,
-        color: CantonColors.textPrimary,
+        color: CantonDarkColors.textPrimary,
         height: 1.5,
       ),
       hintStyle: TextStyle(
         fontSize: 15.0,
         fontStyle: FontStyle.italic,
         fontWeight: FontWeight.w600,
-        color: CantonColors.textSecondary,
+        color: CantonDarkColors.textSecondary,
         height: 1.5,
       ),
       labelStyle: TextStyle(
         fontSize: 17.0,
         fontWeight: FontWeight.w400,
-        color: CantonColors.textPrimary,
+        color: CantonDarkColors.textPrimary,
         height: 1.5,
       ),
       prefixStyle: TextStyle(
@@ -90,39 +90,39 @@ ThemeData cantonLightTheme() {
       suffixStyle: TextStyle(
         fontSize: 17.0,
         fontWeight: FontWeight.w400,
-        color: CantonColors.textPrimary,
+        color: CantonDarkColors.textPrimary,
         height: 1.5,
       ),
     ),
+    colorScheme: CantonDarkColors.colorScheme,
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: 40,
-        side: BorderSide(width: 1.5, color: CantonColors.gray[200]),
+        side: BorderSide(width: 1.5, color: CantonDarkColors.gray[200]),
       ),
       elevation: 0.0,
-      color: CantonColors.bgPrimary,
+      color: CantonDarkColors.bgPrimary,
     ),
     bottomSheetTheme: BottomSheetThemeData(
-      backgroundColor: CantonColors.bgPrimary,
-      modalBackgroundColor: CantonColors.bgPrimary,
+      backgroundColor: CantonDarkColors.bgPrimary,
+      modalBackgroundColor: CantonDarkColors.bgPrimary,
       modalElevation: 0.5,
       shape: SquircleBorder(radius: 55),
     ),
     textSelectionTheme:
-        const TextSelectionThemeData(cursorColor: CantonColors.blue),
-    primaryColor: CantonColors.blue,
-    colorScheme: CantonColors.colorScheme,
-    errorColor: CantonColors.bgDangerInverse,
+        const TextSelectionThemeData(cursorColor: CantonDarkColors.blue),
+    primaryColor: CantonDarkColors.blue,
+    errorColor: CantonDarkColors.bgDangerInverse,
     appBarTheme:
-        const AppBarTheme(color: CantonColors.transparent, elevation: 0.0),
-    canvasColor: CantonColors.bgCanvas,
-    backgroundColor: CantonColors.bgPrimary,
-    scaffoldBackgroundColor: CantonColors.bgCanvas,
+        const AppBarTheme(color: CantonDarkColors.transparent, elevation: 0.0),
+    canvasColor: CantonDarkColors.bgCanvas,
+    backgroundColor: CantonDarkColors.bgPrimary,
+    scaffoldBackgroundColor: CantonDarkColors.bgCanvas,
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: CantonColors.transparent,
+      backgroundColor: CantonDarkColors.transparent,
       elevation: 0.0,
-      unselectedItemColor: CantonColors.iconTertiary,
+      unselectedItemColor: CantonDarkColors.iconTertiary,
     ),
   );
 }

@@ -10,7 +10,7 @@ class CantonBackButton extends StatelessWidget {
     return CantonPrimaryButton(
       containerColor: [null, false].contains(isClear)
           ? CantonColors.gray[300]
-          : cantonInvisible,
+          : CantonColors.transparent,
       containerHeight: 60.0,
       containerWidth: 60.0,
       radius: 50,
