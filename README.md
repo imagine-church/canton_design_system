@@ -15,7 +15,7 @@ This package contains elements that I use in my apps. It includes things such as
 - [X] Loading Icon
 - [X] Animations
 - [X] Custom Methods
-- [X] Icon System (Iconly Icons, Feather Icons)
+- [X] Icon System (Iconly Icons, Feather Icons, Cupertino Icons)
 - [X] Light theme
 
 ## TODO
