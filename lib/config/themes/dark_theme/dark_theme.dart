@@ -98,10 +98,10 @@ ThemeData cantonDarkTheme() {
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: 40,
-        side: BorderSide(width: 1.5, color: CantonDarkColors.gray[800]),
+        side: BorderSide(width: 1.5, color: CantonDarkColors.gray[900]),
       ),
       elevation: 0.0,
-      color: CantonDarkColors.bgPrimary,
+      color: CantonDarkColors.bgCanvas,
     ),
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: CantonDarkColors.bgPrimary,
