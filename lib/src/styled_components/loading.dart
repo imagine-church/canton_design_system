@@ -5,7 +5,7 @@ class Loading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SpinKitChasingDots(
-        color: cantonSuccess[600],
+        color: Theme.of(context).primaryColor,
       ),
     );
   }
