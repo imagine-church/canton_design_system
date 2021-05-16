@@ -110,14 +110,16 @@ ThemeData cantonLightTheme() {
     ),
     textSelectionTheme:
         const TextSelectionThemeData(cursorColor: CantonColors.blue),
-    primaryColor: CantonColors.blue,
-    colorScheme: CantonColors.colorScheme,
-    errorColor: CantonColors.bgDangerInverse,
     appBarTheme:
         const AppBarTheme(color: CantonColors.transparent, elevation: 0.0),
+    colorScheme: CantonColors.colorScheme,
+    primaryColor: CantonColors.blue,
+    errorColor: CantonColors.bgDangerInverse,
     canvasColor: CantonColors.bgCanvas,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgCanvas,
+    accentColor: Color(0),
+    dividerColor: CantonColors.gray[200],
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: CantonColors.transparent,

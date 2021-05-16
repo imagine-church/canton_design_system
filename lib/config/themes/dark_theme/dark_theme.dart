@@ -111,18 +111,19 @@ ThemeData cantonDarkTheme() {
     ),
     textSelectionTheme:
         const TextSelectionThemeData(cursorColor: CantonDarkColors.blue),
-    primaryColor: CantonDarkColors.blue,
-    errorColor: CantonDarkColors.bgDangerInverse,
     appBarTheme:
         const AppBarTheme(color: CantonDarkColors.transparent, elevation: 0.0),
-    canvasColor: CantonDarkColors.bgCanvas,
-    backgroundColor: CantonDarkColors.bgPrimary,
-    scaffoldBackgroundColor: CantonDarkColors.bgCanvas,
-    visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: CantonDarkColors.transparent,
       elevation: 0.0,
       unselectedItemColor: CantonDarkColors.iconTertiary,
     ),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    primaryColor: CantonDarkColors.blue,
+    errorColor: CantonDarkColors.bgDangerInverse,
+    canvasColor: CantonDarkColors.bgCanvas,
+    backgroundColor: CantonDarkColors.bgPrimary,
+    scaffoldBackgroundColor: CantonDarkColors.bgCanvas,
+    dividerColor: CantonDarkColors.gray[1000],
   );
 }

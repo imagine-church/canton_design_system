@@ -187,6 +187,8 @@ class CantonColors {
     /// My favorite color :)
     primary: blue,
     primaryVariant: blue[800],
+    secondary: gray[300],
+    secondaryVariant: gray[700],
     background: bgPrimary,
     surface: bgCanvas,
     error: red[700],
