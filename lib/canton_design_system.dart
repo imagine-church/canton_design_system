@@ -25,6 +25,7 @@ export 'models/models.dart';
 // Src
 export 'src/styled_components/styled_components.dart';
 export 'src/methods.dart';
+export 'src/app.dart';
 export 'src/item_picker/item_picker.dart';
 
 // Icons
