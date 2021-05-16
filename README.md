@@ -37,6 +37,7 @@ This package contains elements that I use in my apps. It includes things such as
 - emojis:
 - circular_check_box:
 - liquid_pull_to_refresh:
+- cupertino_icons:
 
 ## Figma
 [Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma
