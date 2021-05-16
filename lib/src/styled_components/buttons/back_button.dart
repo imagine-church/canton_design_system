@@ -5,11 +5,12 @@ class CantonBackButton extends StatelessWidget {
   final bool isClear;
   final void Function() onPressed;
   const CantonBackButton({this.isClear, this.onPressed});
+
   @override
   Widget build(BuildContext context) {
     return CantonPrimaryButton(
       containerColor: [null, false].contains(isClear)
-          ? CantonColors.gray[300]
+          ? Theme.of(context).colorScheme.secondary
           : CantonColors.transparent,
       containerHeight: 60.0,
       containerWidth: 60.0,
@@ -18,7 +19,7 @@ class CantonBackButton extends StatelessWidget {
       prefixIcon: IconlyIcon(
         IconlyBold.ArrowLeft2,
         color: [null, false].contains(isClear)
-            ? cantonGrey[600]
+            ? Theme.of(context).colorScheme.secondaryVariant
             : Theme.of(context).primaryColor,
         size: 27,
       ),

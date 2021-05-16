@@ -186,6 +186,8 @@ class CantonDarkColors {
     /// My favorite color :)
     primary: blue,
     primaryVariant: blue[800],
+    secondary: Color(0xFF010409),
+    secondaryVariant: gray,
     background: bgPrimary,
     surface: bgCanvas,
     error: red[700],
