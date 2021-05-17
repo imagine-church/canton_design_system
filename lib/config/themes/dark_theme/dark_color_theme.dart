@@ -22,7 +22,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor blue = MaterialColor(
-    0xFF0366d6,
+    0xFF4184e4,
     <int, Color>{
       100: const Color(0xFFc6e6ff),
       200: const Color(0xFF96d0ff),
@@ -37,7 +37,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor green = MaterialColor(
-    0xFF347d39,
+    0xFF46954a,
     <int, Color>{
       100: const Color(0xFFb4f1b4),
       200: const Color(0xFF8ddb8c),
@@ -52,7 +52,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor purple = MaterialColor(
-    0xFF8256d0,
+    0xFF986ee2,
     <int, Color>{
       100: const Color(0xFFeedcff),
       200: const Color(0xFFdcbdfb),
@@ -67,7 +67,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor yellow = MaterialColor(
-    0xFF966600,
+    0xFFae7c14,
     <int, Color>{
       100: const Color(0xFFfbe090),
       200: const Color(0xFFeac55f),
@@ -82,7 +82,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor orange = MaterialColor(
-    0xFFae5622,
+    0xFFcc6b2c,
     <int, Color>{
       100: const Color(0xFFffddb0),
       200: const Color(0xFFffbc6f),
@@ -97,7 +97,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor red = MaterialColor(
-    0xFFc93c37,
+    0xFFe5534b,
     <int, Color>{
       100: const Color(0xFFffd8d3),
       200: const Color(0xFFffb8b0),
@@ -112,7 +112,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor pink = MaterialColor(
-    0xFFae4c82,
+    0xFFc96198,
     <int, Color>{
       100: const Color(0xFFffd7eb),
       200: const Color(0xFFffb3d8),
