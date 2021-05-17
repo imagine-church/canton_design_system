@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 /// Essentially it's the github/primer color palette with a few modifications
 /// that I'm creating here. It says CantonColors just to make it easier for me
 /// to reference however all credit goes to the Primer Design System.
+
 class CantonDarkColors {
   static const MaterialColor gray = MaterialColor(
-    0xFF545d68,
+    0xFF22272e,
     <int, Color>{
       100: const Color(0xFFcdd9e5),
       200: const Color(0xFFadbac7),
@@ -36,7 +37,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor green = MaterialColor(
-    0xFF28a745,
+    0xFF347d39,
     <int, Color>{
       100: const Color(0xFFb4f1b4),
       200: const Color(0xFF8ddb8c),
@@ -51,7 +52,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor purple = MaterialColor(
-    0xFF6f42c1,
+    0xFF8256d0,
     <int, Color>{
       100: const Color(0xFFeedcff),
       200: const Color(0xFFdcbdfb),
@@ -66,7 +67,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor yellow = MaterialColor(
-    0xFFffd33d,
+    0xFF966600,
     <int, Color>{
       100: const Color(0xFFfbe090),
       200: const Color(0xFFeac55f),
@@ -81,7 +82,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor orange = MaterialColor(
-    0xFFf66a0a,
+    0xFFae5622,
     <int, Color>{
       100: const Color(0xFFffddb0),
       200: const Color(0xFFffbc6f),
@@ -96,7 +97,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor red = MaterialColor(
-    0xFFd73a49,
+    0xFFc93c37,
     <int, Color>{
       100: const Color(0xFFffd8d3),
       200: const Color(0xFFffb8b0),
@@ -111,7 +112,7 @@ class CantonDarkColors {
     },
   );
   static const MaterialColor pink = MaterialColor(
-    0xFFd73a49,
+    0xFFae4c82,
     <int, Color>{
       100: const Color(0xFFffd7eb),
       200: const Color(0xFFffb3d8),
