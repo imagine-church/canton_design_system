@@ -38,7 +38,7 @@ This package contains elements that I use in my apps. It includes things such as
 - cupertino_icons:
 
 ## Figma
-[Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma to see UI elements
+[Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma to view UI elements
 
 ## Socials
 If you have any questions, you can reach me here:
