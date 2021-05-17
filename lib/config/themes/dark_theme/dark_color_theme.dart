@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class CantonDarkColors {
   static const MaterialColor gray = MaterialColor(
-    0xFF22272e,
+    0xFF636e7b,
     <int, Color>{
       100: const Color(0xFFcdd9e5),
       200: const Color(0xFFadbac7),
@@ -188,7 +188,7 @@ class CantonDarkColors {
     primary: blue,
     primaryVariant: blue[800],
     secondary: Color(0xFF090c10),
-    secondaryVariant: gray[500],
+    secondaryVariant: gray,
     background: bgPrimary,
     surface: bgCanvas,
     error: red[700],
