@@ -2,7 +2,7 @@ import 'package:canton_design_system/canton_design_system.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ThemeRepository extends ChangeNotifier {
-  ThemeMode themeMode = ThemeMode.dark;
+  ThemeMode themeMode = ThemeMode.system;
 
   bool get isDarkMode => themeMode == ThemeMode.dark;
 
