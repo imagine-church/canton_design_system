@@ -38,7 +38,7 @@ flutter:
   assets:
     # Icons
 
-    # Bold
+    #### Bold
     - lib/assets/icons/svgs/bold/Activity.svg
     - lib/assets/icons/svgs/bold/AddUser.svg
     - lib/assets/icons/svgs/bold/ArrowDown.svg
@@ -140,7 +140,7 @@ flutter:
     - lib/assets/icons/svgs/bold/Wallet.svg
     - lib/assets/icons/svgs/bold/Work.svg
 
-    # Line
+    #### Line
     - lib/assets/icons/svgs/line/Activity.svg
     - lib/assets/icons/svgs/line/AddUser.svg
     - lib/assets/icons/svgs/line/ArrowDown.svg
@@ -242,7 +242,7 @@ flutter:
     - lib/assets/icons/svgs/line/Wallet.svg
     - lib/assets/icons/svgs/line/Work.svg
 
-    # Curved
+    #### Curved
     - lib/assets/icons/svgs/curved/Activity.svg
     - lib/assets/icons/svgs/curved/AddUser.svg
     - lib/assets/icons/svgs/curved/ArrowDown.svg
@@ -355,8 +355,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+
+  # Fonts
   fonts:
-    # Inter
+    #### Inter - Sans Serif typeface
     - family: Inter
       fonts:
         - asset: lib/assets/fonts/Inter-Bold.otf
@@ -377,6 +379,19 @@ flutter:
         - asset: lib/assets/fonts/Inter-Regular.otf
           weight: 400
         - asset: lib/assets/fonts/Inter-Italic.otf
+          weight: 400
+          style: italic
+    #### Times New Roman - Serif typeface
+    - family: Times New Roman
+      fonts:
+        - asset: lib/assets/fonts/Times-New-Roman-Bold.ttf
+          weight: 800
+        - asset: lib/assets/fonts/Times-New-Roman-Bold-Italic.ttf
+          weight: 800
+          style: italic
+        - asset: lib/assets/fonts/Times-New-Roman.ttf
+          weight: 400
+        - asset: lib/assets/fonts/Times-New-Roman-Italic.ttf
           weight: 400
           style: italic
   #
