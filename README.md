@@ -16,13 +16,11 @@ This package contains elements that I use in my apps. It includes things such as
 - _Animations(WIP):_ Fluid animations to give a playful but professional feel.
 - _Custom Methods:_ Custom methods with ease of use.
 - _Icon System:_ Icon system that utilizes Iconly icons, Feather Icons and Cupertino Icons.
+- _Custom Fonts:_ Both serif and sans serif typefaces consisting of Inter UI and Times New Roman.
 - _Light theme:_ Clean light theme.
 - _Dark Theme(WIP):_ Clean dark theme with all elements modified.
 
 ## TODO
-- [ ] Custom Fonts
-    - [X] Inter UI
-    - [ ] (Some kind of Serif font face)
 - [ ] Desktop Support
     - [ ] Typography System
 - [ ] Reconfigure design system on figma to use new elements
@@ -40,7 +38,7 @@ This package contains elements that I use in my apps. It includes things such as
 - cupertino_icons:
 
 ## Figma
-[Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma to see UI elements
+[Link](https://www.figma.com/file/CNpY1mP3jfeAUPW3Dhf3l5/Canton-Design-System?node-id=0%3A1) to design system on figma to view UI elements
 
 ## Socials
 If you have any questions, you can reach me here:
