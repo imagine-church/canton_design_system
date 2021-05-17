@@ -101,7 +101,7 @@ ThemeData cantonDarkTheme() {
         side: BorderSide(width: 1.5, color: CantonDarkColors.gray[1000]),
       ),
       elevation: 0.0,
-      color: CantonDarkColors.bgCanvas,
+      color: CantonDarkColors.bgCanvasMobile,
     ),
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: CantonDarkColors.bgPrimary,
@@ -114,16 +114,16 @@ ThemeData cantonDarkTheme() {
     appBarTheme:
         const AppBarTheme(color: CantonDarkColors.transparent, elevation: 0.0),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: CantonDarkColors.transparent,
+      backgroundColor: CantonDarkColors.bgCanvasMobile,
       elevation: 0.0,
-      unselectedItemColor: CantonDarkColors.iconTertiary,
+      unselectedItemColor: CantonDarkColors.colorScheme.secondaryVariant,
     ),
     visualDensity: VisualDensity.adaptivePlatformDensity,
     primaryColor: CantonDarkColors.blue,
     errorColor: CantonDarkColors.bgDangerInverse,
-    canvasColor: CantonDarkColors.bgCanvas,
+    canvasColor: CantonDarkColors.bgCanvasMobile,
     backgroundColor: CantonDarkColors.bgPrimary,
-    scaffoldBackgroundColor: CantonDarkColors.bgCanvas,
+    scaffoldBackgroundColor: CantonDarkColors.bgCanvasMobile,
     dividerColor: CantonDarkColors.gray[1000],
   );
 }
