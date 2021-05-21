@@ -40,11 +40,6 @@ class CantonPrimaryButton extends StatelessWidget {
     Widget prefixIconWidget() {
       if (prefixIcon != null) {
         return prefixIcon;
-        // Icon(
-        //   prefixIcon,
-        //   color: iconColor ?? cantonGrey[100],
-        //   size: iconSize ?? 27.0,
-        // );
       } else {
         return Container();
       }
@@ -55,11 +50,6 @@ class CantonPrimaryButton extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.only(left: 16.0),
           child: suffixIcon,
-          // Icon(
-          //   suffixIcon,
-          //   color: iconColor ?? cantonGrey[100],
-          //   size: iconSize ?? 27.0,
-          // ),
         );
       } else {
         return Container();
@@ -71,7 +61,9 @@ class CantonPrimaryButton extends StatelessWidget {
         return Text(
           buttonText,
           style: Theme.of(context).textTheme.button.copyWith(
-                color: enabled ? textColor : cantonGrey[500],
+                color: enabled
+                    ? textColor
+                    : Theme.of(context).colorScheme.secondaryVariant,
               ),
         );
       } else {
@@ -82,7 +74,8 @@ class CantonPrimaryButton extends StatelessWidget {
     return GestureDetector(
       onTap: enabled ? onPressed : null,
       child: Material(
-        color: enabled ? containerColor : cantonGrey[300],
+        color:
+            enabled ? containerColor : Theme.of(context).colorScheme.secondary,
         borderRadius: customBorderRadius ?? null,
         shape: customBorderRadius == null
             ? SquircleBorder(
