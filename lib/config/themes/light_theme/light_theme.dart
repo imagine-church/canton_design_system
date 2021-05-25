@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 ThemeData cantonLightTheme() {
   final ThemeData base = ThemeData.light();
   return base.copyWith(
-    splashColor: CantonColors.transparent,
-    highlightColor: Colors.transparent,
     textTheme: MobileTextTheme.theme(base),
     dividerTheme: DividerThemeData(
       space: 0,
@@ -116,6 +114,8 @@ ThemeData cantonLightTheme() {
     primaryColor: CantonColors.blue,
     errorColor: CantonColors.bgDangerInverse,
     canvasColor: CantonColors.bgCanvas,
+    splashColor: CantonColors.transparent,
+    highlightColor: Colors.transparent,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgCanvas,
     accentColor: Color(0),
