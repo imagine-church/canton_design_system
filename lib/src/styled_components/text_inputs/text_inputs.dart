@@ -164,7 +164,7 @@ class CantonTextInput extends StatelessWidget {
           onChanged: onChanged,
           autofocus: autoFocus,
           maxLines: maxLines ?? 1,
-          cursorColor: cursorColor ?? cantonGrey[900],
+          cursorColor: cursorColor ?? Theme.of(context).primaryColor,
           decoration: InputDecoration(
             /// To change height of Text Field, add contentPadding,
             /// Use EdgeInsets.all,
@@ -252,7 +252,7 @@ class CantonTextInput extends StatelessWidget {
             onChanged: onChanged,
             maxLines: maxLines ?? 1,
             autofocus: autoFocus,
-            cursorColor: cursorColor ?? cantonGrey[900],
+            cursorColor: cursorColor ?? Theme.of(context).primaryColor,
             decoration: InputDecoration(
               /// To change height of Text Field, add contentPadding,
               /// Use EdgeInsets.all,

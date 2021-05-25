@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class ThemeRepository extends ChangeNotifier {
   ThemeMode themeMode = ThemeMode.dark;
 
-  bool get isDarkMode => themeMode == ThemeMode.dark;
+  bool get isDarkMode => themeMode == ThemeMode.system;
 
   void toggleTheme(bool dark) {
     themeMode = dark ? ThemeMode.dark : ThemeMode.light;
