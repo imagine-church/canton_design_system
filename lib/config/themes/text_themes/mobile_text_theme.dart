@@ -79,7 +79,7 @@ class MobileTextTheme {
       caption: TextStyle(
         fontFamily: kFontFamily,
         fontWeight: FontWeight.w400,
-        fontSize: 12.0,
+        fontSize: kH6,
         height: kLineHeightTwo,
         color: lightDarkModeDefaultTextColor(base),
       ),

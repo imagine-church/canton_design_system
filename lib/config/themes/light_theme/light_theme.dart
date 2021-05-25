@@ -118,7 +118,6 @@ ThemeData cantonLightTheme() {
     highlightColor: Colors.transparent,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgCanvas,
-    accentColor: Color(0),
     dividerColor: CantonColors.gray[200],
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
