@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class CantonColors {
   static const MaterialColor gray = MaterialColor(
-    0xFF959da5,
+    0xFF24292e,
     <int, Color>{
       100: const Color(0xFFfafbfc),
       200: const Color(0xFFf6f8fa),
