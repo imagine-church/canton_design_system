@@ -42,7 +42,7 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     Color buttonColor = widget.containerColor;
-    Color tapDownShade = Color(0xFFFFFFF);
+    Color tapDownShade = Color(0);
 
     Widget prefixIconWidget() {
       if (widget.prefixIcon != null) {
