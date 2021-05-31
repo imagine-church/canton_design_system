@@ -79,7 +79,7 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
     }
 
     return GestureDetector(
-      onTap: widget.enabled ? widget.onPressed : null,
+      // onTap: widget.enabled ? widget.onPressed : null,
       onTapDown: (_) => widget.enabled
           ? setState(() => tapDownShade = CantonColors.black.withOpacity(0.5))
           : null,
