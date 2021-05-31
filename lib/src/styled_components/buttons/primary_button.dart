@@ -1,7 +1,7 @@
 import 'package:canton_design_system/canton_design_system.dart';
 import 'package:flutter/material.dart';
 
-class CantonPrimaryButton extends StatelessWidget {
+class CantonPrimaryButton extends StatefulWidget {
   final String buttonText;
   final MainAxisAlignment alignment;
   final EdgeInsets containerPadding;
@@ -34,22 +34,29 @@ class CantonPrimaryButton extends StatelessWidget {
   });
 
   @override
+  _CantonPrimaryButtonState createState() => _CantonPrimaryButtonState();
+}
+
+class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
+  @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
+    Color buttonColor = widget.containerColor;
+    Color tapDownShade = Color(0);
 
     Widget prefixIconWidget() {
-      if (prefixIcon != null) {
-        return prefixIcon;
+      if (widget.prefixIcon != null) {
+        return widget.prefixIcon;
       } else {
         return Container();
       }
     }
 
     Widget suffixIconWidget() {
-      if (suffixIcon != null) {
+      if (widget.suffixIcon != null) {
         return Padding(
           padding: const EdgeInsets.only(left: 16.0),
-          child: suffixIcon,
+          child: widget.suffixIcon,
         );
       } else {
         return Container();
@@ -57,12 +64,12 @@ class CantonPrimaryButton extends StatelessWidget {
     }
 
     Widget textWidget() {
-      if (buttonText != null) {
+      if (widget.buttonText != null) {
         return Text(
-          buttonText,
+          widget.buttonText,
           style: Theme.of(context).textTheme.button.copyWith(
-                color: enabled
-                    ? textColor
+                color: widget.enabled
+                    ? widget.textColor
                     : Theme.of(context).colorScheme.secondaryVariant,
               ),
         );
@@ -72,32 +79,41 @@ class CantonPrimaryButton extends StatelessWidget {
     }
 
     return GestureDetector(
-      onTap: enabled ? onPressed : null,
-      child: Material(
-        color:
-            enabled ? containerColor : Theme.of(context).colorScheme.secondary,
-        borderRadius: customBorderRadius ?? null,
-        shape: customBorderRadius == null
-            ? SquircleBorder(
-                radius: radius ?? 45,
-                side: border ?? BorderSide.none,
-              )
-            : null,
-        child: Container(
-          height: containerHeight ?? 65.0,
-          width: containerWidth ?? size.width,
-          padding:
-              containerPadding ?? const EdgeInsets.symmetric(horizontal: 16.0),
-          decoration: BoxDecoration(
-            borderRadius: customBorderRadius ?? null,
-          ),
-          child: Row(
-            mainAxisAlignment: alignment ?? MainAxisAlignment.spaceBetween,
-            children: [
-              prefixIconWidget(),
-              textWidget(),
-              suffixIconWidget(),
-            ],
+      onTap: widget.enabled ? widget.onPressed : null,
+      onTapDown: (_) => widget.enabled
+          ? setState(() => tapDownShade = CantonColors.black.withOpacity(0.5))
+          : null,
+      onTapUp: (_) => widget.enabled ? widget.onPressed : null,
+      child: Container(
+        color: tapDownShade,
+        child: Material(
+          color: widget.enabled
+              ? buttonColor
+              : Theme.of(context).colorScheme.onSecondary,
+          borderRadius: widget.customBorderRadius ?? null,
+          shape: widget.customBorderRadius == null
+              ? SquircleBorder(
+                  radius: widget.radius ?? 45,
+                  side: widget.border ?? BorderSide.none,
+                )
+              : null,
+          child: Container(
+            height: widget.containerHeight ?? 65.0,
+            width: widget.containerWidth ?? size.width,
+            padding: widget.containerPadding ??
+                const EdgeInsets.symmetric(horizontal: 16.0),
+            decoration: BoxDecoration(
+              borderRadius: widget.customBorderRadius ?? null,
+            ),
+            child: Row(
+              mainAxisAlignment:
+                  widget.alignment ?? MainAxisAlignment.spaceBetween,
+              children: [
+                prefixIconWidget(),
+                textWidget(),
+                suffixIconWidget(),
+              ],
+            ),
           ),
         ),
       ),
