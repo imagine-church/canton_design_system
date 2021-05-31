@@ -42,7 +42,7 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     Color buttonColor = widget.containerColor;
-    Color tapDownShade = Color(0);
+    Color tapDownShade = Color(0xFFFFFFF);
 
     Widget prefixIconWidget() {
       if (widget.prefixIcon != null) {
@@ -83,7 +83,12 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
       onTapDown: (_) => widget.enabled
           ? setState(() => tapDownShade = CantonColors.black.withOpacity(0.5))
           : null,
-      onTapUp: (_) => widget.enabled ? widget.onPressed : null,
+      onTapUp: widget.enabled
+          ? (_) {
+              widget.onPressed();
+              setState(() => tapDownShade = Color(0));
+            }
+          : null,
       child: Container(
         color: tapDownShade,
         child: Material(
