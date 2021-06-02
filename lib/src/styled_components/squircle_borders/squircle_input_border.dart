@@ -131,9 +131,6 @@ class SquircleInputBorder extends InputBorder {
       double gapExtent = 0.0,
       double gapPercentage = 0.0,
       TextDirection textDirection}) {
-    assert(gapExtent != null);
-    assert(gapPercentage >= 0.0 && gapPercentage <= 1.0);
-
     switch (side.style) {
       case BorderStyle.none:
         break;

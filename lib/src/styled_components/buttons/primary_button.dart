@@ -94,7 +94,7 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
               ? buttonColor
               : Theme.of(context).colorScheme.onSecondary,
           shape: SquircleBorder(
-            radius: widget.radius ?? BorderRadius.circular(35),
+            radius: widget.radius ?? BorderRadius.circular(45),
             side: widget.border ?? BorderSide.none,
           ),
           child: Container(
