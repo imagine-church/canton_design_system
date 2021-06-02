@@ -119,9 +119,7 @@ class SquircleInputBorder extends InputBorder {
         endY - radius.bottomLeft.y,
       )
 
-      // left line
-      //..moveTo(startX, startY + radius)
-
+      // close line
       ..close();
   }
 

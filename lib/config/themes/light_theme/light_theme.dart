@@ -36,7 +36,7 @@ ThemeData cantonLightTheme() {
       enabledBorder: SquircleInputBorder(
         radius: BorderRadius.all(Radius.circular(45)),
         side: BorderSide(
-          color: CantonColors.borderPrimary,
+          color: CantonColors.transparent,
           width: 1.5,
         ),
       ),
@@ -50,6 +50,7 @@ ThemeData cantonLightTheme() {
       focusedBorder: SquircleInputBorder(
         radius: BorderRadius.all(Radius.circular(45)),
         side: BorderSide(
+          color: CantonColors.transparent,
           width: 1.5,
         ),
       ),
@@ -95,7 +96,10 @@ ThemeData cantonLightTheme() {
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: BorderRadius.circular(35),
-        side: BorderSide(width: 1.5, color: CantonColors.gray[200]),
+        side: BorderSide(
+          width: 1.5,
+          color: CantonColors.gray[200],
+        ),
       ),
       elevation: 0.0,
       color: CantonColors.bgPrimary,
@@ -106,16 +110,19 @@ ThemeData cantonLightTheme() {
       modalElevation: 0.5,
       shape: SquircleBorder(radius: BorderRadius.circular(45)),
     ),
-    textSelectionTheme:
-        const TextSelectionThemeData(cursorColor: CantonColors.blue),
-    appBarTheme:
-        const AppBarTheme(color: CantonColors.transparent, elevation: 0.0),
+    textSelectionTheme: const TextSelectionThemeData(
+      cursorColor: CantonColors.blue,
+    ),
+    appBarTheme: const AppBarTheme(
+      color: CantonColors.transparent,
+      elevation: 0.0,
+    ),
     colorScheme: CantonColors.colorScheme,
     primaryColor: CantonColors.blue,
     errorColor: CantonColors.bgDangerInverse,
     canvasColor: CantonColors.bgCanvas,
     splashColor: CantonColors.transparent,
-    highlightColor: Colors.transparent,
+    highlightColor: CantonColors.transparent,
     backgroundColor: CantonColors.bgPrimary,
     scaffoldBackgroundColor: CantonColors.bgCanvas,
     dividerColor: CantonColors.gray[200],
