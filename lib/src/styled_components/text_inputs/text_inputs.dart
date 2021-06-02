@@ -36,6 +36,46 @@ class CantonTextInput extends StatelessWidget {
     this.containerPadding,
   });
 
+  CantonTextInput copyWith({
+    TextInputType textInputType,
+    String hintText,
+    String labelText,
+    Widget prefixIcon,
+    Widget suffixIcon,
+    FocusNode focusNode,
+    bool obscureText,
+    bool isTextFormField,
+    InputDecoration inputDecoration,
+    TextEditingController controller,
+    ValueChanged<String> onChanged,
+    double containerWidth,
+    int maxLines,
+    EdgeInsets containerPadding,
+    BorderRadius radius,
+    BorderSide border,
+    Color containerColor,
+  }) {
+    return CantonTextInput(
+      obscureText: obscureText ?? this.obscureText,
+      controller: controller ?? this.controller,
+      onChanged: onChanged ?? this.onChanged,
+      focusNode: focusNode ?? this.focusNode,
+      maxLines: maxLines ?? this.maxLines,
+      inputDecoration: inputDecoration ?? this.inputDecoration,
+      containerPadding: containerPadding ?? this.containerPadding,
+      containerColor: containerColor ?? this.containerColor,
+      prefixIcon: prefixIcon ?? this.prefixIcon,
+      suffixIcon: suffixIcon ?? this.suffixIcon,
+      isTextFormField: isTextFormField ?? this.isTextFormField,
+      labelText: labelText ?? this.labelText,
+      textInputType: textInputType ?? this.textInputType,
+      hintText: hintText ?? this.hintText,
+      containerWidth: containerWidth ?? this.containerWidth,
+      radius: radius ?? this.radius,
+      border: border ?? this.border,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
