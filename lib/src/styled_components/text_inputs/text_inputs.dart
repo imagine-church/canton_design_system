@@ -94,20 +94,6 @@ class CantonTextInput extends StatelessWidget {
           prefixIcon: _prefixIconWidget(),
           suffixIcon: _suffixIconWidget(),
           fillColor: containerColor,
-          // enabledBorder: SquircleInputBorder(
-          //   radius: radius,
-          //   side: BorderSide(
-          //     width: 1.5,
-          //     color: Theme.of(context).colorScheme.secondary,
-          //   ),
-          // ),
-          // focusedBorder: SquircleInputBorder(
-          //   radius: radius,
-          //   side: BorderSide(
-          //     width: 1.5,
-          //     color: Theme.of(context).primaryColor,
-          //   ),
-          // ),
         ),
       );
     }
@@ -129,20 +115,6 @@ class CantonTextInput extends StatelessWidget {
           hintText: hintText,
           prefixIcon: _prefixIconWidget(),
           suffixIcon: _suffixIconWidget(),
-          // enabledBorder: SquircleInputBorder(
-          //   radius: radius,
-          //   side: BorderSide(
-          //     width: 1.5,
-          //     color: Theme.of(context).colorScheme.secondary,
-          //   ),
-          // ),
-          // focusedBorder: SquircleInputBorder(
-          //   radius: radius,
-          //   side: BorderSide(
-          //     width: 1.5,
-          //     color: Theme.of(context).primaryColor,
-          //   ),
-          // ),
         ),
       );
     }
