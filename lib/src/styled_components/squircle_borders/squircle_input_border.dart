@@ -3,7 +3,7 @@ import 'squircle_border.dart';
 
 class SquircleInputBorder extends InputBorder {
   final BorderSide side;
-  final double radius;
+  final BorderRadius radius;
 
   @override
   bool get isOutline => true;
@@ -43,7 +43,7 @@ class SquircleInputBorder extends InputBorder {
     return _squirclePath(rect, radius);
   }
 
-  static Path _squirclePath(Rect rect, double radius) {
+  static Path _squirclePath(Rect rect, BorderRadius radius) {
     final c = rect.center;
     double startX = rect.left;
     double endX = rect.right;
@@ -68,7 +68,7 @@ class SquircleInputBorder extends InputBorder {
     return new Path()
 
       // Start position
-      ..moveTo(startX, startY + radius)
+      ..moveTo(startX, startY + radius.topLeft.y)
 
       // top left corner
       ..cubicTo(
@@ -76,12 +76,12 @@ class SquircleInputBorder extends InputBorder {
         startY,
         startX,
         startY,
-        startX + radius,
+        startX + radius.topLeft.x,
         startY,
       )
 
       // top line
-      ..lineTo(endX - radius, startY)
+      ..lineTo(endX - radius.topRight.x, startY)
 
       // top right corner
       ..cubicTo(
@@ -90,11 +90,11 @@ class SquircleInputBorder extends InputBorder {
         endX,
         startY,
         endX,
-        startY + radius,
+        startY + radius.topRight.y,
       )
 
       // right line
-      ..lineTo(endX, endY - radius)
+      ..lineTo(endX, endY - radius.bottomRight.y)
 
       // bottom right corner
       ..cubicTo(
@@ -102,12 +102,12 @@ class SquircleInputBorder extends InputBorder {
         endY,
         endX,
         endY,
-        endX - radius,
+        endX - radius.bottomRight.x,
         endY,
       )
 
       // bottom line
-      ..lineTo(startX + radius, endY)
+      ..lineTo(startX + radius.bottomLeft.x, endY)
 
       // bottom left corner
       ..cubicTo(
@@ -116,7 +116,7 @@ class SquircleInputBorder extends InputBorder {
         startX,
         endY,
         startX,
-        endY - radius,
+        endY - radius.bottomLeft.y,
       )
 
       // left line
