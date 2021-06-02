@@ -51,7 +51,9 @@ class _ItemBoxState extends State<ItemBox> {
       onTap: widget.onPressed,
       child: Material(
         shape: SquircleBorder(
-          radius: isBoxTwo() ? 50 : 40,
+          radius: isBoxTwo()
+              ? BorderRadius.circular(50)
+              : BorderRadius.circular(40),
         ),
         color: _isSelected
             ? isBoxTwo()
