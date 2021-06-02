@@ -21,12 +21,12 @@ class CantonActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CantonPrimaryButton(
       prefixIcon: icon,
-      radius: 0,
+      radius: BorderRadius.circular(0),
       containerColor: CantonColors.transparent,
       alignment: MainAxisAlignment.center,
       containerWidth: containerWidth ?? 40,
       containerHeight: containerHeight ?? 40,
-      iconColor: iconColor ?? cantonGrey[900],
+      iconColor: iconColor ?? Theme.of(context).primaryColor,
       iconSize: iconSize ?? 21,
       containerPadding: const EdgeInsets.all(5),
       onPressed: onPressed,

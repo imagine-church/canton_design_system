@@ -34,27 +34,27 @@ ThemeData cantonLightTheme() {
       fillColor: CantonColors.gray[300],
       hoverColor: CantonColors.gray[400],
       enabledBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonColors.borderPrimary,
           width: 1.5,
         ),
       ),
       errorBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
       focusedBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           width: 1.5,
         ),
       ),
       focusedErrorBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonColors.bgDangerInverse,
           width: 1.5,
@@ -94,7 +94,7 @@ ThemeData cantonLightTheme() {
     ),
     cardTheme: CardTheme(
       shape: SquircleBorder(
-        radius: 40,
+        radius: BorderRadius.circular(35),
         side: BorderSide(width: 1.5, color: CantonColors.gray[200]),
       ),
       elevation: 0.0,
@@ -104,7 +104,7 @@ ThemeData cantonLightTheme() {
       backgroundColor: CantonColors.bgPrimary,
       modalBackgroundColor: CantonColors.bgPrimary,
       modalElevation: 0.5,
-      shape: SquircleBorder(radius: 55),
+      shape: SquircleBorder(radius: BorderRadius.circular(45)),
     ),
     textSelectionTheme:
         const TextSelectionThemeData(cursorColor: CantonColors.blue),

@@ -7,9 +7,9 @@ class CantonPrimaryButton extends StatefulWidget {
   final EdgeInsets containerPadding;
   final bool enabled;
   final void Function() onPressed;
-  final double iconSize, iconPadding, containerWidth, containerHeight, radius;
+  final double iconSize, iconPadding, containerWidth, containerHeight;
   final BorderSide border;
-  final BorderRadius customBorderRadius;
+  final BorderRadius radius;
   final Widget prefixIcon, suffixIcon;
   final Color containerColor, textColor, iconColor;
 
@@ -24,7 +24,6 @@ class CantonPrimaryButton extends StatefulWidget {
     this.iconSize,
     this.iconPadding,
     this.containerWidth,
-    this.customBorderRadius,
     this.containerHeight,
     this.prefixIcon,
     this.suffixIcon,
@@ -79,7 +78,6 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
     }
 
     return GestureDetector(
-      // onTap: widget.enabled ? widget.onPressed : null,
       onTapDown: (_) => widget.enabled
           ? setState(() => tapDownShade = CantonColors.black.withOpacity(0.5))
           : null,
@@ -95,21 +93,15 @@ class _CantonPrimaryButtonState extends State<CantonPrimaryButton> {
           color: widget.enabled
               ? buttonColor
               : Theme.of(context).colorScheme.onSecondary,
-          borderRadius: widget.customBorderRadius ?? null,
-          shape: widget.customBorderRadius == null
-              ? SquircleBorder(
-                  radius: widget.radius ?? 45,
-                  side: widget.border ?? BorderSide.none,
-                )
-              : null,
+          shape: SquircleBorder(
+            radius: widget.radius ?? BorderRadius.circular(35),
+            side: widget.border ?? BorderSide.none,
+          ),
           child: Container(
             height: widget.containerHeight ?? 65.0,
             width: widget.containerWidth ?? size.width,
             padding: widget.containerPadding ??
                 const EdgeInsets.symmetric(horizontal: 16.0),
-            decoration: BoxDecoration(
-              borderRadius: widget.customBorderRadius ?? null,
-            ),
             child: Row(
               mainAxisAlignment:
                   widget.alignment ?? MainAxisAlignment.spaceBetween,

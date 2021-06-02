@@ -12,7 +12,8 @@ class CantonHeaderButton extends StatelessWidget {
   final void Function() onPressed;
   final Widget icon;
   final Color backgroundColor;
-  final double radius, size;
+  final BorderRadius radius;
+  final double size;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class CantonHeaderButton extends StatelessWidget {
           backgroundColor ?? Theme.of(context).colorScheme.secondary,
       containerHeight: size ?? 60.0,
       containerWidth: size ?? 60.0,
-      radius: radius ?? 42.5,
+      radius: radius,
       containerPadding: const EdgeInsets.all(0),
       prefixIcon: icon,
       alignment: MainAxisAlignment.center,
