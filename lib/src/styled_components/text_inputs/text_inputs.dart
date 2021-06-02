@@ -96,11 +96,15 @@ class CantonTextInput extends StatelessWidget {
           fillColor: containerColor,
           enabledBorder: SquircleInputBorder(
             radius: radius,
-            side: BorderSide(width: 1.5),
+            side: BorderSide(
+                width: 1.5, color: Theme.of(context).colorScheme.secondary),
           ),
           focusedBorder: SquircleInputBorder(
             radius: radius,
-            side: BorderSide(width: 1.5),
+            side: BorderSide(
+              width: 1.5,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
           ),
         ),
       );
@@ -125,11 +129,17 @@ class CantonTextInput extends StatelessWidget {
           suffixIcon: _suffixIconWidget(),
           enabledBorder: SquircleInputBorder(
             radius: radius,
-            side: BorderSide(width: 1.5),
+            side: BorderSide(
+              width: 1.5,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
           ),
           focusedBorder: SquircleInputBorder(
             radius: radius,
-            side: BorderSide(width: 1.5),
+            side: BorderSide(
+              width: 1.5,
+              color: Theme.of(context).colorScheme.secondary,
+            ),
           ),
         ),
       );
