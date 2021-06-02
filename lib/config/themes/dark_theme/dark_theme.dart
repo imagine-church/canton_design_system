@@ -36,27 +36,27 @@ ThemeData cantonDarkTheme() {
       fillColor: CantonDarkColors.gray[300],
       hoverColor: CantonDarkColors.gray[400],
       enabledBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonDarkColors.borderPrimary,
           width: 1.5,
         ),
       ),
       errorBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonDarkColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
       focusedBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           width: 1.5,
         ),
       ),
       focusedErrorBorder: SquircleInputBorder(
-        radius: 45,
+        radius: BorderRadius.circular(35),
         side: BorderSide(
           color: CantonDarkColors.bgDangerInverse,
           width: 1.5,
@@ -97,7 +97,7 @@ ThemeData cantonDarkTheme() {
     colorScheme: CantonDarkColors.colorScheme,
     cardTheme: CardTheme(
       shape: SquircleBorder(
-        radius: 40,
+        radius: BorderRadius.circular(40),
         side: BorderSide(width: 1.5, color: CantonDarkColors.gray[1000]),
       ),
       elevation: 0.0,
@@ -107,7 +107,7 @@ ThemeData cantonDarkTheme() {
       backgroundColor: CantonDarkColors.bgPrimary,
       modalBackgroundColor: CantonDarkColors.bgPrimary,
       modalElevation: 0.5,
-      shape: SquircleBorder(radius: 55),
+      shape: SquircleBorder(radius: BorderRadius.circular(55)),
     ),
     textSelectionTheme:
         const TextSelectionThemeData(cursorColor: CantonDarkColors.blue),
