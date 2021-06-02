@@ -6,6 +6,7 @@ class CantonTextInput extends StatelessWidget {
   final Widget prefixIcon, suffixIcon;
   final FocusNode focusNode;
   final bool obscureText, isTextFormField;
+  final InputDecoration inputDecoration;
   final TextEditingController controller;
   final ValueChanged<String> onChanged;
   final double containerWidth;
@@ -23,6 +24,7 @@ class CantonTextInput extends StatelessWidget {
     this.labelText,
     this.prefixIcon,
     this.maxLines,
+    this.inputDecoration,
     this.border,
     this.radius,
     this.suffixIcon,
@@ -84,17 +86,18 @@ class CantonTextInput extends StatelessWidget {
         focusNode: focusNode,
         maxLines: maxLines ?? 1,
         cursorColor: Theme.of(context).primaryColor,
-        decoration: InputDecoration(
-          /// To change height of Text Field, add contentPadding,
-          /// Use EdgeInsets.all,
-          /// and change it from 23 to something else.
-          /// 23 for height 65, 18 for height 50.
-          contentPadding: containerPadding ?? EdgeInsets.all(18),
-          hintText: hintText,
-          prefixIcon: _prefixIconWidget(),
-          suffixIcon: _suffixIconWidget(),
-          fillColor: containerColor,
-        ),
+        decoration: inputDecoration ??
+            InputDecoration(
+              /// To change height of Text Field, add contentPadding,
+              /// Use EdgeInsets.all,
+              /// and change it from 23 to something else.
+              /// 23 for height 65, 18 for height 50.
+              contentPadding: containerPadding ?? EdgeInsets.all(18),
+              hintText: hintText,
+              prefixIcon: _prefixIconWidget(),
+              suffixIcon: _suffixIconWidget(),
+              fillColor: containerColor,
+            ),
       );
     }
 
@@ -105,17 +108,18 @@ class CantonTextInput extends StatelessWidget {
         maxLines: maxLines ?? 1,
         focusNode: focusNode,
         cursorColor: Theme.of(context).primaryColor,
-        decoration: InputDecoration(
-          /// To change height of Text Field, add contentPadding,
-          /// Use EdgeInsets.all,
-          /// and change it from 23 to something else.
-          /// 23 for height 65, 18 for height 50. WARNING: This can change if you have prefix Icon
-          fillColor: containerColor,
-          contentPadding: containerPadding ?? EdgeInsets.all(18),
-          hintText: hintText,
-          prefixIcon: _prefixIconWidget(),
-          suffixIcon: _suffixIconWidget(),
-        ),
+        decoration: inputDecoration ??
+            InputDecoration(
+              /// To change height of Text Field, add contentPadding,
+              /// Use EdgeInsets.all,
+              /// and change it from 23 to something else.
+              /// 23 for height 65, 18 for height 50. WARNING: This can change if you have prefix Icon
+              fillColor: containerColor,
+              contentPadding: containerPadding ?? EdgeInsets.all(18),
+              hintText: hintText,
+              prefixIcon: _prefixIconWidget(),
+              suffixIcon: _suffixIconWidget(),
+            ),
       );
     }
 
