@@ -137,6 +137,11 @@ class CantonTextInput extends StatelessWidget {
               prefixIcon: _prefixIconWidget(),
               suffixIcon: _suffixIconWidget(),
               fillColor: containerColor,
+              enabledBorder: SquircleInputBorder(radius: radius, side: border),
+              focusedBorder: SquircleInputBorder(radius: radius, side: border),
+              errorBorder: SquircleInputBorder(radius: radius, side: border),
+              focusedErrorBorder:
+                  SquircleInputBorder(radius: radius, side: border),
             ),
       );
     }
@@ -159,6 +164,11 @@ class CantonTextInput extends StatelessWidget {
               hintText: hintText,
               prefixIcon: _prefixIconWidget(),
               suffixIcon: _suffixIconWidget(),
+              enabledBorder: SquircleInputBorder(radius: radius, side: border),
+              focusedBorder: SquircleInputBorder(radius: radius, side: border),
+              errorBorder: SquircleInputBorder(radius: radius, side: border),
+              focusedErrorBorder:
+                  SquircleInputBorder(radius: radius, side: border),
             ),
       );
     }

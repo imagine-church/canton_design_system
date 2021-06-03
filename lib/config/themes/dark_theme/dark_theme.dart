@@ -36,27 +36,28 @@ ThemeData cantonDarkTheme() {
       fillColor: CantonDarkColors.gray[300],
       hoverColor: CantonDarkColors.gray[400],
       enabledBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonDarkColors.borderPrimary,
           width: 1.5,
         ),
       ),
       errorBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonDarkColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
       focusedBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
+          color: CantonDarkColors.gray[400],
           width: 1.5,
         ),
       ),
       focusedErrorBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonDarkColors.bgDangerInverse,
           width: 1.5,

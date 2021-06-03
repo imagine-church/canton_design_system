@@ -34,28 +34,28 @@ ThemeData cantonLightTheme() {
       fillColor: CantonColors.gray[300],
       hoverColor: CantonColors.gray[400],
       enabledBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonColors.transparent,
           width: 1.5,
         ),
       ),
       errorBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonColors.bgDangerInverse,
           width: 1.5,
         ),
       ),
       focusedBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonColors.gray[400],
           width: 1.5,
         ),
       ),
       focusedErrorBorder: SquircleInputBorder(
-        radius: BorderRadius.all(Radius.circular(45)),
+        radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
           color: CantonColors.bgDangerInverse,
           width: 1.5,
