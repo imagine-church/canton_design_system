@@ -5,6 +5,21 @@ Canton Design System elements and resources for Flutter.
 ## Description
 This package contains elements that I use in my apps. It includes things such as themes (colors, typography, etc.), custom methods, buttons, text-inputs, a color picker, and more. This all in attempt to limit the amount of time I spend on remaking simple tools and ui, while still customizing my screens to my flavor.
 
+## Getting Started
+To use this package and access its content, add this dependency to your pubspec.yaml
+``` 
+dependencies:
+    canton_design_system:
+        git:
+          url: git://github.com/31Carlton7/canton_design_system.git
+          ref: master
+```
+And simply import the package using this code
+```
+import 'package:canton_design_system/canton_design_system.dart';
+```
+BTW ```package:flutter/material.dart``` is already imported when using this package so no need to re-import :)
+
 ## All Features
 - _Color system:_ Credits to the Primer Color system, as this is a modified version of theirs.
 - _Typography system:_ Credits to the Primer typography system.
