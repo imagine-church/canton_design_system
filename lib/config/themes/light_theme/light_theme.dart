@@ -36,7 +36,7 @@ ThemeData cantonLightTheme() {
       enabledBorder: SquircleInputBorder(
         radius: BorderRadius.all(Radius.circular(35)),
         side: BorderSide(
-          color: CantonColors.transparent,
+          color: CantonColors.gray[400],
           width: 1.5,
         ),
       ),
