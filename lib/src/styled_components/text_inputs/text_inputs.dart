@@ -137,9 +137,17 @@ class CantonTextInput extends StatelessWidget {
               prefixIcon: _prefixIconWidget(),
               suffixIcon: _suffixIconWidget(),
               fillColor: containerColor,
-              enabledBorder: SquircleInputBorder(radius: radius, side: border),
-              focusedBorder: SquircleInputBorder(radius: radius, side: border),
-              errorBorder: SquircleInputBorder(radius: radius, side: border),
+              enabledBorder: SquircleInputBorder(
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
+              focusedBorder: SquircleInputBorder(
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
+              errorBorder: SquircleInputBorder(
+                  radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                  side: border ?? BorderSide.none),
               focusedErrorBorder:
                   SquircleInputBorder(radius: radius, side: border),
             ),
@@ -158,15 +166,23 @@ class CantonTextInput extends StatelessWidget {
               /// To change height of Text Field, add contentPadding,
               /// Use EdgeInsets.all,
               /// and change it from 23 to something else.
-              /// 23 for height 65, 18 for height 50. WARNING: This can change if you have prefix Icon
-              fillColor: containerColor,
+              /// 23 for height 65, 18 for height 50.
               contentPadding: containerPadding ?? EdgeInsets.all(18),
               hintText: hintText,
               prefixIcon: _prefixIconWidget(),
               suffixIcon: _suffixIconWidget(),
-              enabledBorder: SquircleInputBorder(radius: radius, side: border),
-              focusedBorder: SquircleInputBorder(radius: radius, side: border),
-              errorBorder: SquircleInputBorder(radius: radius, side: border),
+              fillColor: containerColor,
+              enabledBorder: SquircleInputBorder(
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
+              focusedBorder: SquircleInputBorder(
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
+              errorBorder: SquircleInputBorder(
+                  radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                  side: border ?? BorderSide.none),
               focusedErrorBorder:
                   SquircleInputBorder(radius: radius, side: border),
             ),
