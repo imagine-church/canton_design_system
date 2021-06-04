@@ -10,7 +10,7 @@ export 'squircle_borders/squircle_input_border.dart';
 export 'squircle_borders/squircle_border_clipper.dart';
 
 // Text Inputs
-export 'text_inputs/text_inputs.dart';
+export 'text_inputs.dart';
 
 // All
 export 'tag.dart';

@@ -146,10 +146,13 @@ class CantonTextInput extends StatelessWidget {
                 side: border ?? BorderSide.none,
               ),
               errorBorder: SquircleInputBorder(
-                  radius: radius ?? BorderRadius.all(Radius.circular(45)),
-                  side: border ?? BorderSide.none),
-              focusedErrorBorder:
-                  SquircleInputBorder(radius: radius, side: border),
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
+              focusedErrorBorder: SquircleInputBorder(
+                radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                side: border ?? BorderSide.none,
+              ),
             ),
       );
     }
@@ -183,8 +186,9 @@ class CantonTextInput extends StatelessWidget {
               errorBorder: SquircleInputBorder(
                   radius: radius ?? BorderRadius.all(Radius.circular(45)),
                   side: border ?? BorderSide.none),
-              focusedErrorBorder:
-                  SquircleInputBorder(radius: radius, side: border),
+              focusedErrorBorder: SquircleInputBorder(
+                  radius: radius ?? BorderRadius.all(Radius.circular(45)),
+                  side: border ?? BorderSide.none),
             ),
       );
     }
