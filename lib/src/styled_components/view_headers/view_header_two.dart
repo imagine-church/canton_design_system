@@ -6,12 +6,14 @@ class ViewHeaderTwo extends StatelessWidget {
   final bool isBackButtonClear;
   final Widget buttonOne;
   final Widget buttonTwo;
+  final void Function() backButtonFunction;
   const ViewHeaderTwo(
       {this.title,
       this.backButton,
       this.isBackButtonClear,
       this.buttonOne,
-      this.buttonTwo});
+      this.buttonTwo,
+      this.backButtonFunction});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,13 @@ class ViewHeaderTwo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         ![null, false].contains(backButton)
-            ? CantonBackButton(isClear: isBackButtonClear ?? true)
+            ? CantonBackButton(
+                isClear: isBackButtonClear ?? true,
+                onPressed: () {
+                  backButtonFunction();
+                  Navigator.pop(context);
+                },
+              )
             : buttonOne,
         Text(
           title,
