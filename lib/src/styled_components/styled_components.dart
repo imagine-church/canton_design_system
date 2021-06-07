@@ -4,6 +4,12 @@ export 'buttons/action_button.dart';
 export 'buttons/back_button.dart';
 export 'buttons/header_button.dart';
 
+// Text Inputs
+export 'text_inputs/text_input.dart';
+export 'text_inputs/tag_text_input/tag_styler.dart';
+export 'text_inputs/tag_text_input/tag_text_input_styler.dart';
+export 'text_inputs/tag_text_input/tag_text_input.dart';
+
 // Squicle Borders
 export 'squircle_borders/squircle_border.dart';
 export 'squircle_borders/squircle_input_border.dart';
@@ -14,7 +20,6 @@ export 'view_headers/view_header_one.dart';
 export 'view_headers/view_header_two.dart';
 
 // All
-export 'text_inputs.dart';
 export 'tag.dart';
 export 'scaffold_view.dart';
 export 'loading.dart';
