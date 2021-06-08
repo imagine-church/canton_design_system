@@ -13,7 +13,7 @@ export 'package:flutter_svg/flutter_svg.dart';
 // Config
 export 'config/themes/light_theme/light_theme.dart';
 export 'config/themes/light_theme/light_color_palette.dart';
-export 'config/themes/dark_theme/dark_color_theme.dart';
+export 'config/themes/dark_theme/dark_color_palette.dart';
 export 'config/themes/dark_theme/dark_theme.dart';
 export 'config/themes/text_themes/desktop_text_theme.dart';
 export 'config/themes/text_themes/mobile_text_theme.dart';

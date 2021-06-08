@@ -196,6 +196,6 @@ class CantonDarkColors {
     onSecondary: black,
     onBackground: black,
     onSurface: gray[300],
-    onError: white,
+    onError: red[100],
   );
 }

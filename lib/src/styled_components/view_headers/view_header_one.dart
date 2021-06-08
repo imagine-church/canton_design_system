@@ -12,7 +12,7 @@ class ViewHeaderOne extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.headline2.copyWith(
+          style: Theme.of(context).textTheme.headline3.copyWith(
                 color: Theme.of(context).primaryColor,
               ),
         ),
