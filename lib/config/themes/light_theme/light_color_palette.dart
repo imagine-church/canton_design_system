@@ -196,7 +196,7 @@ class CantonColors {
     onSecondary: gray[200],
     onBackground: black,
     onSurface: gray[300],
-    onError: white,
+    onError: red[100],
   );
 }
 
