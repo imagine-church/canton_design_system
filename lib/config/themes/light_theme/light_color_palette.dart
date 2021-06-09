@@ -154,7 +154,7 @@ class CantonColors {
   static Color iconWarning = yellow[900];
 
   /// Border Colors
-  static Color borderPrimary = gray[300];
+  static Color borderPrimary = gray[200];
   static Color borderSecondary = Color(0xFFeaecef);
   static Color borderTertiary = gray[200];
   static Color borderOverlay = gray[300];
