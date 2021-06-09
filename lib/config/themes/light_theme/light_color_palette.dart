@@ -190,12 +190,12 @@ class CantonColors {
     secondary: gray[300],
     secondaryVariant: gray[700],
     background: bgPrimary,
-    surface: bgCanvas,
+    surface: yellow,
     error: red[700],
     onPrimary: white,
     onSecondary: gray[200],
     onBackground: black,
-    onSurface: gray[300],
+    onSurface: yellow[300],
     onError: red[100],
   );
 }
