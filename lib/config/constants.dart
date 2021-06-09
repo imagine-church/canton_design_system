@@ -6,6 +6,14 @@ double kLineHeight = 1.25;
 
 double kLineHeightTwo = 1.5;
 
+bool isDarkMode(BuildContext context) {
+  if (Theme.of(context).colorScheme == CantonDarkColors.colorScheme) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 Color lightDarkModeDefaultTextColor(ThemeData themeData) {
   if (themeData.brightness == Brightness.dark) {
     return CantonColors.gray[100];

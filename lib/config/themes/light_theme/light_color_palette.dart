@@ -186,7 +186,7 @@ class CantonColors {
   static var colorScheme = ColorScheme.light(
     /// My favorite color :)
     primary: blue,
-    primaryVariant: blue[800],
+    primaryVariant: blue[400],
     secondary: gray[300],
     secondaryVariant: gray[700],
     background: bgPrimary,
