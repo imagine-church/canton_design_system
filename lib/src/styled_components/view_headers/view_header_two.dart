@@ -24,7 +24,9 @@ class ViewHeaderTwo extends StatelessWidget {
             ? CantonBackButton(
                 isClear: isBackButtonClear ?? true,
                 onPressed: () {
-                  backButtonFunction();
+                  backButtonFunction != null
+                      ? backButtonFunction()
+                      : DoNothingAction();
                   Navigator.pop(context);
                 },
               )
