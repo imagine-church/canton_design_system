@@ -37,12 +37,11 @@ class ViewHeaderTwo extends StatelessWidget {
               .copyWith(color: Theme.of(context).primaryColor),
         ),
         [null, false].contains(backButton)
-            ? buttonOne ?? buttonTwo
-            : buttonTwo ??
-                CantonHeaderButton(
-                  backgroundColor: CantonColors.transparent,
-                  icon: Container(),
-                ),
+            ? buttonTwo
+            : CantonHeaderButton(
+                backgroundColor: CantonColors.transparent,
+                icon: Container(),
+              )
       ],
     );
   }
