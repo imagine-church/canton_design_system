@@ -33,7 +33,7 @@ ThemeData cantonDarkTheme() {
       contentPadding: const EdgeInsets.all(23),
       filled: true,
       isCollapsed: true,
-      fillColor: CantonDarkColors.gray[300],
+      fillColor: CantonDarkColors.gray[1000],
       hoverColor: CantonDarkColors.gray[400],
       enabledBorder: SquircleInputBorder(
         radius: BorderRadius.all(Radius.circular(35)),
@@ -99,7 +99,7 @@ ThemeData cantonDarkTheme() {
     cardTheme: CardTheme(
       shape: SquircleBorder(
         radius: BorderRadius.circular(40),
-        side: BorderSide(width: 1.5, color: CantonDarkColors.gray[1000]),
+        side: BorderSide(color: CantonDarkColors.gray[1000]),
       ),
       elevation: 0.0,
       color: CantonDarkColors.bgCanvasMobile,
