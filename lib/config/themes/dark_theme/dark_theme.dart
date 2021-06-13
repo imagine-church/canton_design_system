@@ -33,7 +33,7 @@ ThemeData cantonDarkTheme() {
       contentPadding: const EdgeInsets.all(23),
       filled: true,
       isCollapsed: true,
-      fillColor: Color(0xff0a0a0a),
+      fillColor: Color(0xff050505),
       hoverColor: CantonDarkColors.gray[400],
       enabledBorder: SquircleInputBorder(
         radius: BorderRadius.all(Radius.circular(35)),
