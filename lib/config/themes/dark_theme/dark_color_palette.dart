@@ -166,7 +166,7 @@ class CantonDarkColors {
 
   /// Background Colors
   static Color bgCanvas = Color(0xFF0d1117);
-  static Color bgCanvasMobile = Color(0xFF010409);
+  static Color bgCanvasMobile = black;
   static Color bgInverse = Color(0xFFf0f6fc);
   static Color bgInset = Color(0xFF090c10);
   static Color bgPrimary = Color(0xFF0d1117);
