@@ -12,7 +12,7 @@ ThemeData cantonDarkTheme() {
     dividerTheme: DividerThemeData(
       space: 0,
       thickness: 1,
-      color: CantonDarkColors.borderPrimary,
+      color: Color(0xff050505),
     ),
     iconTheme: IconThemeData(
       color: CantonDarkColors.iconPrimary,
