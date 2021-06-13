@@ -125,6 +125,6 @@ ThemeData cantonDarkTheme() {
     canvasColor: CantonDarkColors.bgCanvasMobile,
     backgroundColor: CantonDarkColors.bgPrimary,
     scaffoldBackgroundColor: CantonDarkColors.bgCanvasMobile,
-    dividerColor: CantonDarkColors.gray[1000],
+    dividerColor: Color(0xff050505),
   );
 }
