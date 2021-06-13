@@ -191,7 +191,7 @@ class CantonDarkColors {
     secondaryVariant: gray[300],
     background: bgPrimary,
     surface: yellow[300],
-    error: red[700],
+    error: red,
     onPrimary: white,
     onSecondary: gray[200],
     onBackground: black,
