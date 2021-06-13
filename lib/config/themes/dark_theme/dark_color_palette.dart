@@ -187,15 +187,15 @@ class CantonDarkColors {
     /// My favorite color :)
     primary: blue,
     primaryVariant: blue[400],
-    secondary: Color(0xff050505),
+    secondary: const Color(0xff050505),
     secondaryVariant: gray[300],
     background: bgPrimary,
-    surface: yellow,
+    surface: yellow[400],
     error: red[700],
     onPrimary: white,
     onSecondary: gray[200],
     onBackground: black,
-    onSurface: yellow[100],
+    onSurface: const Color(0xFF3c1e00),
     onError: red[100],
   );
 }
