@@ -18,6 +18,7 @@ export 'config/themes/dark_theme/dark_theme.dart';
 export 'config/themes/text_themes/desktop_text_theme.dart';
 export 'config/themes/text_themes/mobile_text_theme.dart';
 export 'config/providers/theme_provider.dart';
+export 'config/constants.dart';
 
 // Models
 export 'models/models.dart';
