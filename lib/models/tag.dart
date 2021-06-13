@@ -35,7 +35,9 @@ class Tag {
 
   @override
   bool operator ==(Object other) {
-    return other != null && other is Tag && hashCode == other.hashCode;
+    if (identical(this, other)) return true;
+
+    return other is Tag && other.name == name;
   }
 
   @override
