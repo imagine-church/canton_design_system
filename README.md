@@ -39,6 +39,7 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - [ ] Desktop Support
     - [ ] Typography System
 - [ ] Reconfigure design system on figma to use new elements
+- [ ] Migrate to null saftey
 
 ## Dependencies
 - flutter_page_transition: 
