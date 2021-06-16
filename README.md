@@ -24,7 +24,7 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - _Color system:_ Credits to the Primer Color system, as this is a modified version of theirs.
 - _Typography system:_ Credits to the Primer typography system.
 - _Buttons:_ Resizable primary button, small/header button and back button with all necessary customizations.
-- _Text Inputs:_ Custom text field and text form fields.
+- _Text Inputs:_ Custom text field, text form fields, and a tag text field.
 - _Borders:_ border customization.
 - _Color Picker(WIP):_ Working color picker that returns color.
 - _Loading icon:_ Loading icon/widget.
