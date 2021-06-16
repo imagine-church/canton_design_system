@@ -33,7 +33,7 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - _Icon System:_ Icon system that utilizes Iconly icons, Feather Icons and Cupertino Icons.
 - _Custom Fonts:_ Both serif and sans serif typefaces consisting of Inter UI and Times New Roman.
 - _Light theme:_ Clean light theme.
-- _Dark Theme(WIP):_ Clean dark theme with all elements modified.
+- _Dark Theme:_ Clean dark theme with all elements modified.
 
 ## TODO
 - [ ] Desktop Support
