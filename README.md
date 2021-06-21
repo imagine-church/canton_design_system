@@ -36,10 +36,8 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - _Dark Theme:_ Clean dark theme with all elements modified.
 
 ## TODO
-- [ ] Desktop Support
-    - [ ] Typography System
-- [ ] Reconfigure design system on figma to use new elements
 - [ ] Migrate to null saftey
+- [ ] Reconfigure design system on figma to use new elements
 
 ## Dependencies
 - flutter_page_transition: 
