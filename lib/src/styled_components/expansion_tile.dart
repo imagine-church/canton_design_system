@@ -100,7 +100,6 @@ class _ExpansionTileState extends State<ExpansionTile>
   AnimationController _controller;
   Animation<double> _iconTurns;
   Animation<double> _heightFactor;
-  Animation<Color> _borderColor;
   Animation<Color> _headerColor;
   Animation<Color> _iconColor;
   Animation<Color> _backgroundColor;
@@ -113,7 +112,6 @@ class _ExpansionTileState extends State<ExpansionTile>
     _controller = AnimationController(duration: _kExpand, vsync: this);
     _heightFactor = _controller.drive(_easeInTween);
     _iconTurns = _controller.drive(_halfTween.chain(_easeInTween));
-    _borderColor = _controller.drive(_borderColorTween.chain(_easeOutTween));
     _headerColor = _controller.drive(_headerColorTween.chain(_easeInTween));
     _iconColor = _controller.drive(_iconColorTween.chain(_easeInTween));
     _backgroundColor =
@@ -150,15 +148,15 @@ class _ExpansionTileState extends State<ExpansionTile>
   }
 
   Widget _buildChildren(BuildContext context, Widget child) {
-    final Color borderSideColor = _borderColor.value ?? Colors.transparent;
     final Color titleColor = _headerColor.value;
 
     return Container(
+      margin: widget.childrenPadding,
       decoration: BoxDecoration(
           color: _backgroundColor.value ?? Colors.transparent,
           border: Border(
-            top: BorderSide(color: borderSideColor),
-            bottom: BorderSide(color: borderSideColor),
+            top: BorderSide(color: CantonColors.transparent),
+            bottom: BorderSide(color: CantonColors.transparent),
           )),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -167,15 +165,17 @@ class _ExpansionTileState extends State<ExpansionTile>
             data: IconThemeData(color: _iconColor.value),
             child: Container(
               color: widget.headerBackgroundColor ?? Colors.transparent,
-              margin: widget.childrenPadding,
               child: ListTile(
                 onTap: _handleTap,
                 leading: widget.leading,
-                shape: SquircleBorder(radius: BorderRadius.circular(20)),
+                shape: SquircleBorder(
+                  radius: BorderRadius.circular(20),
+                  side: BorderSide.none,
+                ),
                 title: DefaultTextStyle(
                   style: Theme.of(context)
                       .textTheme
-                      .subhead
+                      .headline6
                       .copyWith(color: titleColor),
                   child: widget.title,
                 ),
