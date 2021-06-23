@@ -24,4 +24,4 @@ export 'tag.dart';
 export 'scaffold_view.dart';
 export 'loading.dart';
 export 'refresh_list.dart';
-export 'expansion_tile.dart';
+export 'canton_expansion_tile.dart';
