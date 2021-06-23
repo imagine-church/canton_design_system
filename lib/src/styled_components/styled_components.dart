@@ -24,3 +24,4 @@ export 'tag.dart';
 export 'scaffold_view.dart';
 export 'loading.dart';
 export 'refresh_list.dart';
+export 'expansion_tile.dart';
