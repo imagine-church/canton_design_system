@@ -3,7 +3,7 @@
 Canton Design System elements and resources for Flutter.
 
 ## Description
-This package contains elements that I use in my apps. It includes things such as themes (colors, typography, etc.), custom methods, buttons, text-inputs, a color picker, and more. This all in attempt to limit the amount of time I spend on remaking simple tools and ui, while still customizing my screens to my flavor.
+This package contains elements that I use in my apps. It includes things such as themes (colors, typography, etc.), custom methods, buttons, text-inputs, a color picker, and more. This all in attempt to limit the amount of time I spend on remaking simple tools and ui, while still customizing my screens to my flavor. Please note that this package will not be uploaded on pub.dev in the near future.
 
 ## Getting Started
 To use this package and access its content, add this dependency to your pubspec.yaml
