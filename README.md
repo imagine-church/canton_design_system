@@ -24,7 +24,7 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - _Color system:_ Credits to the Primer Color system, as this is a modified version of theirs.
 - _Typography system:_ Credits to the Primer typography system.
 - _Buttons:_ Resizable primary button, small/header button and back button with all necessary customizations.
-- _Text Inputs:_ Custom text field and text form fields.
+- _Text Inputs:_ Custom text field, text form fields, and a tag text field.
 - _Borders:_ border customization.
 - _Color Picker(WIP):_ Working color picker that returns color.
 - _Loading icon:_ Loading icon/widget.
@@ -33,11 +33,10 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 - _Icon System:_ Icon system that utilizes Iconly icons, Feather Icons and Cupertino Icons.
 - _Custom Fonts:_ Both serif and sans serif typefaces consisting of Inter UI and Times New Roman.
 - _Light theme:_ Clean light theme.
-- _Dark Theme(WIP):_ Clean dark theme with all elements modified.
+- _Dark Theme:_ Clean dark theme with all elements modified.
 
 ## TODO
-- [ ] Desktop Support
-    - [ ] Typography System
+- [ ] Migrate to null saftey
 - [ ] Reconfigure design system on figma to use new elements
 
 ## Dependencies
@@ -58,5 +57,5 @@ BTW ```package:flutter/material.dart``` is already imported when using this pack
 ## Socials
 If you have any questions, you can reach me here:
 
-- Instagram: 31carlton7
+- Instagram: [@31Carlton7](https://www.instagram.com/31carlton7/)
 - Email: carltonaikins7@gmail.com
