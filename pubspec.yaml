@@ -18,7 +18,6 @@ dependencies:
   flutter_spinkit:
   flutter_svg:
   emojis:
-  circular_check_box:
   cupertino_icons:
   liquid_pull_to_refresh:
   keyboard_visibility:

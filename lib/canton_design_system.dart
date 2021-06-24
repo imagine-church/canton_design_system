@@ -1,7 +1,6 @@
 library canton_design_system;
 
 // Packages
-export 'package:circular_check_box/circular_check_box.dart';
 export 'package:emojis/emoji.dart';
 export 'package:emojis/emojis.dart';
 export 'package:flutter/material.dart';
